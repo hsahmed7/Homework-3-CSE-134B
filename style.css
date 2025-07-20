@@ -124,3 +124,53 @@ figcaption {
   margin-top: 0.5rem;
 }
 
+
+/* Base (Desktop First) */
+body {
+  font-size: 1rem;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  header, nav, main, footer {
+    padding: 0.5em;
+  }
+
+  nav ul {
+    display: none; /* Hide full nav */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger */
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .hero-img {
+    object-position: center top;
+  }
+}
+
+
+
+
+
+
+
+
